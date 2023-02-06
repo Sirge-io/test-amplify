@@ -1,0 +1,45 @@
+{
+  "api": {
+    "api811616a3": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "testamplify19eeba24"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "testamplify19eeba24": {
+      "RuntimeVersionArn": "arn:aws:lambda:us-east-2:189928542727:function:testfrontendrunner",
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_testamplify19eeba24_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testamplify19eeba24"
+        }
+      ]
+    },
+    "AMPLIFY_function_testamplify19eeba24_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testamplify19eeba24"
+        }
+      ]
+    }
+  }
+}
