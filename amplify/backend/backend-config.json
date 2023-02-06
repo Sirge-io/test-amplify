@@ -18,10 +18,18 @@
   "function": {
     "testamplify19eeba24": {
       "RuntimeVersionArn": "arn:aws:lambda:us-east-2:189928542727:function:testfrontendrunner",
+      "UpdateRuntimeOn": "Manual",
       "build": true,
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "lastPushTimeStamp": "2023-02-06T16:30:54.271Z",
+      "service": "amplifyhosting",
+      "type": "cicd"
     }
   },
   "parameters": {
@@ -38,6 +46,22 @@
         {
           "category": "function",
           "resourceName": "testamplify19eeba24"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
         }
       ]
     }
